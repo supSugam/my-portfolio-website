@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+    content="This is an official portfolio website of student-developer Sugam Subedi from Pokhara, Nepal"/>
+    <title>Sugam &#124; Full Stack Developer</title>
+    <link rel="icon" href="images/favicon.png" />
+
+    <link rel="preconnect" href="http://fonts.googleapis.com" />
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="http://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="http://kit-pro.fontawesome.com/releases/v6.2.0/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script
+    defer
+    src="http://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+  ></script>
+    <script defer src="js/script.js"></script>
+
+  </head>
+  <body>
+    <header class="header">
+
+      <a class="header-logo" href="#">
+        <img class="header--logo" alt="my logo" src="images/header-logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-links" href="#">Home</a></li>
+          <li><a class="main-nav-links" href="#services">Services</a></li>
+          <li><a class="main-nav-links" href="#cta">Work with me</a></li>
+          <li><a class="main-nav-links" href="#about-me">About Me</a></li>
+          <li><a class="main-nav-links" href="#">Blog</a></li>
+        </ul>
+      <a class="main-nav-links nav-btn" href="#cta">Contact Me</a>
+
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <i name="menu" class="fa-solid fa-bars mobile-icon-nav gradient-text"></i>
+        <i name="close" class="fa-solid fa-xmark mobile-icon-nav gradient-text"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-part">
+            <h1 class="heading-primary">
+              Hello World,
+              <span class="gradient-text">I'm Sugam.</span><br />
+              A student and <br> a <span class="gradient-text">Developer</span>
+              from Nepal.
+            </h1>
+            <p class="description-text-hero line-height-min">
+              A passionate full stack developer and a student based on Pokhara,
+              Nepal having more than just an experience on web development, with
+              also a minimal knowledge on app technologies.
+            </p>
+
+            <div class="hero-btn">
+
+              <a href="#" class="btn btn--full margin-right-sm">Hire me now</a>
+              <a style="padding: 1.6rem 2rem;" href="#" class="btn btn--outline"
+              >See My Resume
+              <i class="fa-sharp fa-solid fa-eye dl--icon"></i></a>
+            </div>
+
+            <div class="social-links flex--social">
+              <a href="http://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter social-icon"></i></a>
+              <a href="http://www.linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin social-icon"></i></a>
+              <a href="github.com/supSugam" target="_blank"
+                ><i class="fa-brands fa-github social-icon"></i></a>
+              <a href="http://www.facebook.com/supSugam/" target="_blank"
+                ><i class="fa-brands fa-facebook social-icon"></i></a>
+              <a href="http://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram social-icon"></i></a>
+            </div>
+          </div>
+          <div class="hero-image-part">
+            <img
+              class="hero-img"
+              src="images/hero-img.svg"
+              alt="a young guy on computer"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills section-divider">
+        <div class="container">
+          <h2 class="subheading center-text">I have experience with</h2>
+          <div class="logos">
+            <div class="logo">
+              <i class="fa-brands fa-html5"></i>
+              <span class="logo-desc">HTML5</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="logo-desc">CSS3</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-js"></i>
+              <span class="logo-desc">JS</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-react"></i>
+              <span class="logo-desc">React</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-java"></i>
+              <span class="logo-desc">Java</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-python"></i>
+              <span class="logo-desc">Python</span>
+            </div>
+            <div class="logo">
+              <i class="fa-brands fa-node"></i>
+              <span class="logo-desc">Node.js</span>
+            </div>
+            <div class="logo">
+              <i class="fa-solid fa-database"></i>
+              <span class="logo-desc">MySql</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-services" id="services">
+        <div class="container center-text">
+          <span class="subheading margin-gap">Services</span>
+          <h1 class="heading-primary font-size--max margin-gap">
+            See the <span class="gradient-text font-size--max"
+              >services</span
+            > I offer..
+          </h1>
+          <p class="services-description">
+            If you are looking for someone who will build solid and scalable
+            e-products for you, then your search is over, I'm right here.
+          </p>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="services-box">
+            <div class="gradient-border"></div>
+            <img
+              class="service-img"
+              src="images/services/web-design.svg"
+              alt="Web Design"
+            />
+            <div class="service-content">
+              <h1 class="service-title heading-tertiary">
+                Responsive website design
+              </h1>
+              <ul class="service-details">
+                <li class="service-detail">
+                  <i class="fa-regular fa-moon-stars service-icon"></i>Clean and
+                  attractive design
+                </li>
+                <li class="service-detail">
+                  <i class="fa-solid fa-laptop-mobile service-icon"></i
+                  >Browsable on any device
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-face-smile-hearts service-icon"></i
+                  >Functional and User-Friendly
+                </li>
+                <li class="service-detail">
+                  <i class="fa-brands fa-searchengin service-icon"></i>Optimized
+                  for Google Search
+                </li>
+
+                <li class="service-detail">
+                  <i class="fa-regular fa-shield-check"></i>Secured over the
+                  Internet
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="services-box">
+            <div class="gradient-border"></div>
+
+            <img
+              class="service-img"
+              src="images/services/app-development.svg"
+              alt="Web Design"
+            />
+            <div class="service-content">
+              <h1 class="service-title heading-tertiary">
+                An app for your business
+              </h1>
+              <ul class="service-details">
+                <li class="service-detail">
+                  <i class="fa-regular fa-moon-stars service-icon"></i>
+                  Smooth UI & Performance
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-mobile service-icon"></i>OS
+                  Independent (Both iOS & Android)
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-cloud-arrow-down service-icon"></i
+                  >Regular Updates
+                </li>
+                <li class="service-detail">
+                  <i class="fa-solid fa-sliders service-icon"></i>Easily
+                  Customizable
+                </li>
+
+                <li class="service-detail">
+                  <i class="fa-regular fa-shield-check"></i>Secured over the
+                  Internet
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="services-box last-service">
+            <div class="gradient-border"></div>
+
+            <img
+              class="service-img"
+              src="images/services/back-end.svg"
+              alt="Web Design"
+            />
+            <div class="service-content">
+              <h1 class="service-title heading-tertiary">
+                Server-side development
+              </h1>
+              <ul class="service-details">
+                <li class="service-detail">
+                  <i class="fa-regular fa-database service-icon"></i>Build
+                  reliable database
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-face-smile-hearts service-icon"></i
+                  >Ensured quality user experience
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-screwdriver-wrench service-icon"></i
+                  >Maintainable server mechanisms
+                </li>
+                <li class="service-detail">
+                  <i class="fa-regular fa-objects-column services-icon"></i
+                  >Efficient client data management
+                </li>
+
+                <li class="service-detail">
+                  <i class="fa-regular fa-shield-check"></i>Ensured Security
+                  over internet
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about-me section-divider" id="about-me">
+        <div class="container-mid center-text">
+          <span  class="subheading margin-gap">About me</span>
+          <h1  class="heading-primary font-size--max margin-gap">
+            So who <span class="gradient-text font-size--max">am I</span
+            > ?
+          </h1>
+          <div class="about-me">
+            <picture>
+              <img class="abt-me-img" src="images/about-me-img.svg" alt="A guy - code thinking"/>
+            </picture>
+            <div class="about-me-text">
+              <p style="margin-bottom: 0;" class="description-text-about line-height-max">
+                I am <span class="gradient-text">Sugam Subedi</span>
+                from Pokhara, Nepal. I am currently an active student pursuing bachelors degree on information technology.
+                I have more than a year of experience on web development, during this phase I have accomplished few to many beginner to intermediate level of web projects.<br><br>
+                Besides that, I also have worked on and have prior knowledge on back-end systems and database.
+                Currently I'm learning about new frameworks and libraries to uplift my work-rate to the <span class="gradient-text">next level.</span></p>
+            </div>
+          </div>
+          <div class="about-me-footer">
+
+            <span class="subheading">To know more about me, Connect with me here</span>
+            <div class="social-links flex--social">
+              <a href="http://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter social-icon"></i></a>
+              <a href="http://www.linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin social-icon"></i></a>
+              <a href="http://www.github.com/supSugam" target="_blank"
+                ><i class="fa-brands fa-github social-icon"></i></a>
+              <a href="http://www.facebook.com/supSugam" target="_blank"
+                ><i class="fa-brands fa-facebook social-icon"></i></a>
+              <a href="http://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram social-icon"></i></a>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="section-cta" id="cta">
+        <div class="container-mid center-text">
+          <span  class="subheading margin-gap">Work with me</span>
+          <h1  class="heading-primary margin-gap">
+            Send me a
+            <span class="heading-primary gradient-text font-size--max"
+              >message !</span
+            >
+          </h1>
+          <p class="cta-description">
+            Even though I'm currencty an active student, I am open to face any work challenges to grow further.
+            So, please feel free to reach to me so we can team-up and get the projects on your mind done!<br>
+            <i style="font-size: 2rem;" class="fa-solid fa-face-smile-hearts"></i>
+          </p>
+
+
+
+
+            <div class="cta container center-text">
+
+              <div class="message-box">
+                <p class="heading-secondary">Have any question or proposal,<br>or just want
+                  to say <span class="gradient-text">hello ?</span>👋</p>
+
+                
+                <!-- <p class="description-text">Reach out through this form and I'll get back to you in the as soon as I can.</p> -->
+
+                <form method="POST" class="cta-form">
+
+
+                  <div class="cta-name">
+                    <i class="fa-solid fa-user form-icon"></i>
+
+                    <input id="full-name" type="text" placeholder="Full Name" name="full-name" required="">
+                  </div>
+
+                  <div class="cta-email">
+                    <i class="fa-solid fa-envelope form-icon"></i>
+                    <input id="email" type="email" placeholder="Your Email Address" name="email" required="">
+                  </div>
+
+                  <div class="cta-message">
+                    <i class="fa-solid fa-message-text form-icon flip-horizontally"></i>
+                    <textarea class="message-field" id="message-field" name="message" placeholder="Type Your Message" maxlength="5000"></textarea>
+                  </div>
+
+                  <div class="cta-select">
+                    <i class="fa-solid fa-square-chevron-down form-icon"></i>
+
+                    <label for="select-where">Where did you hear from us?</label>
+                    <select id="select-where" name="select-where" required="">
+                      <option value="">Please choose one option:</option>
+                      <option value="friends">From Someone you know</option>
+                      <option value="search-engine">From Search Engine</option>
+                      <option value="social">From Social Media</option>
+                      <option value="irl">I know you in a person</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+                  <div class="cta-submit">
+                    <button href="mailto:hello@sugamsubedi.com.np" style="padding: 0;" class="btn btn--submit key">
+
+                      <div class="btn--submit-content">
+                        Send It! <i class="fa-solid fa-paper-plane-top"></i>
+                      </div>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="image-box">
+                <img class="cta-img" src="images/cta-img.svg" alt="A guy">
+              </div>
+            </div>
+      </section>
+      
+    </main> 
+    <footer class="footer section-divider">
+      <div class="foot-container grid--footer">
+
+        <div class="contact-col responsive-container">
+
+                <img class="footer-img" src="images/footer-img.svg" alt="Farewell, Reach Me Later!" >
+
+                <div class="contact-contents">
+
+                  <div class="email-info info">
+                    <i class="fa-solid fa-envelope footer-icon"></i>
+                    <a class="contact-text" href="mailto:hello@sugamsubedi.com.np">hello@sugamsubedi.com.np</a>
+                  </div>
+                  
+                  <div class="phone-info info">
+                    <i class="fa-duotone fa-phone footer-icon"></i>
+                    <a class="contact-text" href="#">Request a Call!</a>
+                  </div>
+                  
+                  <p class="copyright">
+                    Copyright © <span class="year">2022</span> by Sugam Subedi, 
+                    All rights reserved.
+                  </p>
+                </div>
+        </div>
+
+        <div class="other-col">
+
+          <nav class="pages-col">
+            <p class="footer-heading">Pages</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Home</a></li>
+              <li><a class="footer-link" href="#services">Services</a></li>
+              <li><a class="footer-link" href="#">Projects</a></li>
+              <li><a class="footer-link" href="#cta">Contact</a></li>
+              <li><a class="footer-link" href="#about-me">About me</a></li>
+              <li><a class="footer-link" href="#">Blog</a></li>
+            </ul>
+          </nav>
+
+
+          <nav class="socials-col">
+            <p class="footer-heading">Socials</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link footer-link-flex" href="http://www.twitter.com/supSugam" target="_blank"><i class="fa-brands fa-twitter footer-icon-social"></i>Twitter</a></li>
+              <li><a class="footer-link footer-link-flex" href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer-icon-social"></i>LinkedIn</a></li>
+              <li><a class="footer-link footer-link-flex" href="http://www.github.com/supSugam" target="_blank"><i class="fa-brands fa-github footer-icon-social"></i>Github</a></li>
+              <li><a class="footer-link footer-link-flex" href="http://www.facebook.com/supSugam" target="_blank"><i class="fa-brands fa-facebook footer-icon-social"></i>Facebook</a></li>
+              <li><a class="footer-link footer-link-flex" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram footer-icon-social"></i>Instagram</a></li>
+            </ul>
+          </nav>
+
+
+          <nav class="address-col">
+            <p class="footer-heading">My Place</p>
+            <div class="footer-nav">
+
+              <a target="_blank" href="http://goo.gl/maps/F4c6wenwhAkYpGEW8" class="footer-link footer-link-flex line-height-max">Pokhara 7 - Kaski <br>Gandaki, Nepal </a>
+              <a target="_blank" href="http://goo.gl/maps/F4c6wenwhAkYpGEW8" class="footer-link footer-link-flex"><i class="fa-solid fa-location-dot footer-icon-social"></i>View On Maps</a>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </footer> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      const form = document.querySelector(".cta-form");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      let name = document.getElementById("full-name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message-field").value;
+      let selectedOption = document.getElementById("select-where").value;
+    
+      document.querySelector(".cta-form").reset();
+  
+      sendEmail(name, email, message, selectedOption);
+    })
+    function sendEmail(name, email){
+      Email.send({
+          
+        Host: "smtp.elasticemail.com", 
+        Username: "sugamunreal@gmail.com",
+        Password: "05B17212B5DE036C97359E6904B9EDEE5E8A",
+        To: "hello@sugamsubedi.com.np",
+        From: "sugamunreal@gmail.com",
+        Subject: `${name} Just mailed you through website form`,
+        Body: `Name: ${name} <br> Email: ${email} <br> Message: ${message} <br> Knows You From: ${selectedOption}`,
+      }).then((success) => {
+       
+        alert("Message Successfully Sent.");
+      }).catch((error) => {
+          
+        alert("An Error Occured, try again!");
+      })
+    }
+  </script>
+  </body>
+</html>
