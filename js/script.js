@@ -70,6 +70,78 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
+//For Scrolling Animation
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+// Email Receive SMTP
+
+//For Popup Message
+
+function toggleBlur() {
+  let blur = document.getElementById("blur");
+  let blurFooter = document.getElementById("blur--footer");
+
+  blur.classList.toggle("active");
+  blurFooter.classList.toggle("active");
+
+  let popup = document.getElementById("popup");
+  popup.classList.toggle("active");
+}
+
+function openPopup() {
+  popup.classList.add("open-popup");
+  toggleBlur();
+  $("body").css("overflow", "hidden");
+
+  // document.body.style.overflow = "hidden";
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+  toggleBlur();
+}
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  var btn = document.getElementById("button");
+
+  var option = document.getElementById("select-where");
+  let selected = option.options[option.selectedIndex].text;
+  let datetime = new Date().toLocaleString();
+
+  emailjs
+    .send("toZoho", "template_o6787aq", {
+      from_name: document.getElementById("full-name").value,
+      email_id: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+      selected_option: selected,
+      date_time: datetime,
+    })
+    .then(function (res) {
+      openPopup();
+
+      var form = document.getElementById("form");
+      form.reset();
+    });
+});
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";

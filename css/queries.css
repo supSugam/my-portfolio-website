@@ -432,8 +432,16 @@
     gap: 6.5rem 0;
   }
 
+  .reveal {
+    transform: translateY(5rem);
+  }
+
   .grid--footer {
     row-gap: 1.8rem;
+  }
+
+  .header-logo {
+    padding-left: 0;
   }
 }
 

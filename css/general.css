@@ -16,7 +16,8 @@ body {
   line-height: 1;
   color: #b3b3b3;
   background-color: #000;
-  overflow-x: hidden;
+  position: relative;
+  /* overflow-x: hidden; */
 }
 
 .container {
