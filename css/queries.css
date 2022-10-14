@@ -199,16 +199,6 @@
     visibility: visible;
     transform: translateX(0);
   }
-  /* 
-  .hero-image-part::before {
-    width: 35%;
-    padding-bottom: 35%;
-  }
-
-  .hero-image-part::after {
-    width: 25%;
-    padding-bottom: 25%;
-  } */
 }
 
 @media (max-width: 52em) {
@@ -433,7 +423,7 @@
   }
 
   .reveal {
-    transform: translateY(5rem);
+    transform: translateY(10rem);
   }
 
   .grid--footer {
@@ -442,6 +432,21 @@
 
   .header-logo {
     padding-left: 0;
+  }
+  .description-text-hero {
+    margin-bottom: 3.6rem;
+  }
+
+  .margin-right-sm {
+    margin-right: 0;
+  }
+
+  .hero-btn .btn {
+    padding: 1.6rem 4.2rem;
+  }
+
+  #services {
+    padding: 3rem 0;
   }
 }
 

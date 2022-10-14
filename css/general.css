@@ -73,7 +73,11 @@ body {
 }
 
 .margin-right-sm {
-  margin-right: 1.6rem !important;
+  margin-right: 1.6rem;
+}
+
+#services {
+  padding: 8rem 0;
 }
 
 .gradient-text {

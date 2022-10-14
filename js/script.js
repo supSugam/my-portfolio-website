@@ -80,7 +80,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 150;
+    var revealpoint = 30;
 
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
@@ -90,9 +90,10 @@ function reveal() {
   }
 }
 
-// Email Receive SMTP
-
 //For Popup Message
+
+let body = document.getElementById("body");
+let html = document.getElementById("html");
 
 function toggleBlur() {
   let blur = document.getElementById("blur");
@@ -108,15 +109,18 @@ function toggleBlur() {
 function openPopup() {
   popup.classList.add("open-popup");
   toggleBlur();
-  $("body").css("overflow", "hidden");
-
-  // document.body.style.overflow = "hidden";
+  body.classList.add("no-scroll");
+  html.classList.add("no-scroll");
 }
 
 function closePopup() {
   popup.classList.remove("open-popup");
   toggleBlur();
+  body.classList.remove("no-scroll");
+  html.classList.remove("no-scroll");
 }
+
+// Email Receive SMTP
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
